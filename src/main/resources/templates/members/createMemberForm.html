@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/members/new" method="post">
+<!--        form tag 를 통해서 button 이 눌렸을때 action 이 실행된다. 이때
+                여기서는 action 을 통해 /members/new 라는 페이지에 post 요청(method = post)을 하게 된다
+                react 에서 이미 배운것-->
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+        </div>
+        <button type="submit">등록</button> </form>
+</div> <!-- /container -->
+</body>
+</html>
