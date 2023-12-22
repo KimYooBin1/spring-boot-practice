@@ -1,12 +1,9 @@
 package hello.springhello.service;
 
+import hello.springhello.aop.TimeTraceAop;
 import hello.springhello.repository.*;
-import jakarta.persistence.EntityManager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.sql.DataSource;
 
 
 //spring bean 을 auto donfiguration 하지 않고 직접 생성하는 방식
@@ -45,4 +42,6 @@ public class SpringConfig {
 //        return new JdbcTemplateMemberRepository(dataSource);
 //        return new JpaMemberRepository(em);
 //    }
+
+
 }
