@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Commit;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -35,10 +36,11 @@ class MemberServiceIntegrationTest {
 //    }
 
     @Test
+    @Commit //DB에 반영된다
     void 회원가입() {   //test 는 과감히 한글로 작성해도 좋다
         //given : 무엇이 주어졌을때
         Member member = new Member();
-        member.setName("hello");
+        member.setName("spring");
         //when : 언?제
         Long saveId = memberService.join(member);
         //then : 무엇이 나와야되는지

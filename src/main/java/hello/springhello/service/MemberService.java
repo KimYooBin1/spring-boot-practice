@@ -3,12 +3,14 @@ package hello.springhello.service;
 import hello.springhello.domain.Member;
 import hello.springhello.repository.MemberRepository;
 import hello.springhello.repository.MemoryMemberRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional  //JPQL 을 사용하려면 transactional 이 필요하다
 //@Service
 public class MemberService {
 
