@@ -16,7 +16,7 @@ public class JpaMemberRepository implements MemberRepository{
     }
 
     @Override
-    public Member save(Member member) {
+    public Member save (Member member) {
         em.persist(member); //jpa는 query 문 추가 작성없이 spring boot 가 자동으로 작성해준다
         return member;
     }

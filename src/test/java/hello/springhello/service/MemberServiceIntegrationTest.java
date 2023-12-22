@@ -36,7 +36,7 @@ class MemberServiceIntegrationTest {
 //    }
 
     @Test
-    @Commit //DB에 반영된다
+//    @Commit //DB에 반영된다
     void 회원가입() {   //test 는 과감히 한글로 작성해도 좋다
         //given : 무엇이 주어졌을때
         Member member = new Member();
